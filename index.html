@@ -1,88 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tugas2.html</title>
+    <title>FROM UBEYYY!!</title>
     <style>
         body {
-            background-color: rgb(223, 181, 241);
+            background-color: hsla(0, 0%, 0%, 0.847);
+            font-family: fantasy; 
+            color: #333333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
 
-        h1 {
+        .container {
+            overflow: hidden;
+            width: 100%;
             text-align: center;
-            color: rgb(36, 1, 88)
         }
 
-        fieldset {
-            border: 10px solid #00460f;
-            padding: 10px;
-            margin-bottom: 20px;
+        .moving-text {
+            font-size: 3em;
+            color: #ff34d6;
+            white-space: nowrap;
+            animation: moveText 10s ease-in-out infinite alternate;
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translateX(10%);
+            }
+            100% {
+                transform: translateX(-10%);
+            }
         }
     </style>
 </head>
-
 <body>
-    <h1>Seberapa kenal kalian sama ubay</h1>
-    <form action="#">
-        <fieldset>
-            <legend>FORMULIR</legend>
-            <table>
-                <tr>
-                    <td><label for="username">Nama Anda</label></td>
-                    <td><input type="text" id="username" name="username"></td>
-                </tr>
-                <tr>
-                    <td><label for="password">Password HP </label></td>
-                    <td><input type="password" id="password" name="password"></td>
-                </tr>
-                <tr>
-                    <td><label for="number">Jumlah Pengikut Instagram</label></td>
-                    <td><input type="number" id="number" name="number" min="0" step="1" required></td>
-                </tr>
-                <tr>
-                    <td><label for="hobby"> Apa sajakah kegemaran 
-                        <br>ubayy yang kalian tau??</label></td>
-                    <td><input type="checkbox" value="Melihat wanita cantik" name="hobby">Melihat wanita cantik</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="checkbox" value="Menjahili Kawan" name="hobby">Menjahili Kawan</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="checkbox" value="Sholat dan Berdoa" name="hobby">Sholat dan Berdoa</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="checkbox" value="Senyum dan sopan" name="hobby">Senyum dan sopan</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="radio" value="Hanya kotak 1 dan dua yang benar" name="hobby">Hanya kotak 1 dan dua
-                        yang benar</td>
-                </tr>
-                <tr>
-                    <td><label for="description">Pesan Pesan Buat Ubay</label></td>
-                    <td><textarea id="description" name="description" rows="4" cols="50"></textarea></td>
-                </tr>
-                <tr>
-                    <td><label for="gender">Jenis Kelamin Ubay</label></td>
-                    <td>
-                        <select id="gender" name="gender">
-                            <option value="Laki-laki">Laki-laki</option>
-                            <option value="Perempuan">Perempuan</option>
-                            <option value="Lainnya">Banci</option>
-                        </select>
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
-        <button type="submit">Finish and Submit</button>
-        <button type="reset">Reset</button>
-    </form>
+    <div class="container">
+        <div class="moving-text">LOPYU MANIS</div>
+        <div class="moving-text">MALAMMM CWE AKU!!</div>
+        <div class="moving-text">SMANGADDD KULIANYAA </div>
+        <div class="moving-text">#FROMUBAYMEMBAHANA</div>
+        <div class="moving-text">jangan rindu berat sm ku y nnti bodo</div>
+    </div>
 </body>
-
-
 </html>
